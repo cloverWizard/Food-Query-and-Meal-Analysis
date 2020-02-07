@@ -1,3 +1,5 @@
+
+import java.io.IOException;
 import java.util.List;
 
 /**
@@ -28,8 +30,9 @@ public interface FoodDataADT<F extends FoodItem> {
      * 
      * @param filePath path of the food item data file 
      *        (e.g. folder1/subfolder1/.../foodItems.csv) 
+     * @throws IOException 
      */
-    public void loadFoodItems(String filePath);
+    public void loadFoodItems(String filePath) throws IOException;
     
     
     /**

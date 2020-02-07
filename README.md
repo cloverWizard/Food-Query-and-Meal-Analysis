@@ -1,47 +1,13 @@
-# Fall 2018 Team Project: Food Query and Meal Analyzer
+# dteam-12
 
-See Canvas assignment pages for details of the assignment.
+## NOTE: Errors are being thrown in the console (Program still works)
+* These seem to happen at the start of main and in the meal cart page
+* They don't seem to affect the program operation
+## NOTE: GUI is no longer being used
 
-## Download and install JDK 8
+## Milestone #2 
+* Due: 10:00pm on 30 November 2018
+* [Link to StackOverflow page used for creating Cell Class](https://stackoverflow.com/questions/15661500/javafx-listview-item-with-an-image-button)
 
-https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html
-
-## Download and install Eclipse Oxygen or later
-
-https://www.eclipse.org/oxygen/
-
-## Install JavaFX tools to Eclipse
-
-1. Launch Eclipse (Oxygen or later)
-2. Help -> Install New Software
-3. Search for e(fx)clipse
-4. Select All items
-5. Click  Install
-6. Accept certificate
-7. Restart Eclipse
-
-## Create a JavaFX project
-
-1. Launch Eclipse
-2. File -> New -> Other -> JavaFX -> JavaFX Project
-3. Enter name
-4. Leave source files in *package application*
-
-## Add starter files to your JavaFX project
-
-### clone from GitHub
-
-Students may clone this repository and do the following from a local terminal window to get files in correct place for Eclipse JavaFX project.  Note: execute commands on the left and not the comments as shown on the right.
-
-```
-cd ~/cs400-workspace/p5                                  # cd to your local project directory
-git clone https://github.com/cs400-deppeler/FoodQuery    # git clone to get files from this site
-mv FoodQuery/.git .                                      # move .git file into current directory
-mv FoodQuery/.gitignore .                                # moves .gitignore file into current directory
-mv FoodQuery/* .                                         # moves all source and data files into current directory
-rmdir FoodQuery                                          # remove the FoodQuery sub-directory
-```
-
-### Or, download files as in previous assignments from the assignment page
-
-https://pages.cs.wisc.edu/~deppeler/cs400/assignments/p5/files/
+## Milestone #3 
+* Due 10:00pm on 12 December 2018

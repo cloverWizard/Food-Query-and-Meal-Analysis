@@ -1,3 +1,6 @@
+package application;
+
+
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -10,6 +13,9 @@ import java.util.List;
 public class FoodItem {
     // The name of the food item.
     private String name;
+    
+    // The quantity of this food item.
+    private int quantity;
 
     // The id of the food item.
     private String id;
@@ -22,8 +28,18 @@ public class FoodItem {
      * @param name name of the food item
      * @param id unique id of the food item 
      */
-    public FoodItem(String id, String name) {
+    public FoodItem(String id, String name, int quantity) {
         // TODO : Complete
+    		this.name = name;
+    		this.id = id;
+    		this.quantity = quantity;
+    		nutrients = new HashMap<String, Double>();
+    		nutrients.put("calories", (double) 0);
+    		nutrients.put("fat", (double) 0);
+    		nutrients.put("carbohydrate", (double) 0);
+    		nutrients.put("fiber", (double) 0);
+    		nutrients.put("protein", (double) 0);
+    		
     }
     
     /**
@@ -42,7 +58,7 @@ public class FoodItem {
      */
     public String getID() {
         // TODO : Complete
-        return null;
+        return id;
     }
     
     /**
@@ -52,7 +68,7 @@ public class FoodItem {
      */
     public HashMap<String, Double> getNutrients() {
         // TODO : Complete
-        return null;
+        return nutrients;
     }
 
     /**
@@ -61,6 +77,7 @@ public class FoodItem {
      */
     public void addNutrient(String name, double value) {
         // TODO : Complete
+    		nutrients.replace(name, value);
     }
 
     /**
@@ -69,7 +86,17 @@ public class FoodItem {
      */
     public double getNutrientValue(String name) {
         // TODO : Complete
-        return 0;
+    		if (nutrients == null)
+    			System.out.print("null");
+        return nutrients.get(name);
+    }
+    
+    public int getQuantity() {
+    	return this.quantity;
+    }
+    
+    public void setQuantity(int quantity) {
+    	this.quantity = quantity;
     }
     
 }
